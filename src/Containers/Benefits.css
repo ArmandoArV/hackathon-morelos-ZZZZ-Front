@@ -13,7 +13,7 @@
 .icon{
     display: flex;
     flex-direction: row;
-    gap: 200px;
+    gap: 150px;
     justify-content: center;
     padding-top: 75px;
 }
@@ -24,70 +24,70 @@
 }
 
 .rectangulo1{
-    width: 250px;         
+    width: 300px;         
     height: 350px;        
     background-color: #936CFB; 
     position: relative;
     border-radius: 15px;
-}
-
-.circunferencia1{
-    width: 100px;          
-  height: 100px;         
-  background-color: #D9D9D9; 
-  border-radius: 50%;    
-  position: absolute;    
-  top: 25%;              
-  left: 50%;             
-  transform: translate(-50%, -50%);
 }
 
 .icon1{
-    padding-top: 35px;
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
+}
+
+.texto1{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
 }
 
 .rectangulo2{
-    width: 250px;         
+    width: 300px;         
     height: 350px;        
     background-color: #936CFB; 
     position: relative;
     border-radius: 15px;
-}
-
-.circunferencia2{
-    width: 100px;          
-  height: 100px;         
-  background-color: #D9D9D9; 
-  border-radius: 50%;    
-  position: absolute;    
-  top: 25%;              
-  left: 50%;             
-  transform: translate(-50%, -50%);
 }
 
 .icon2{
-    padding-top: 35px;
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
+}
+
+.texto2{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
 }
 
 .rectangulo3{
-    width: 250px;         
+    width: 300px;         
     height: 350px;        
     background-color: #936CFB; 
     position: relative;
     border-radius: 15px;
 }
 
-.circunferencia3{
-    width: 100px;          
-  height: 100px;         
-  background-color: #D9D9D9; 
-  border-radius: 50%;    
-  position: absolute;    
-  top: 25%;              
-  left: 50%;             
-  transform: translate(-50%, -50%);
+.icon3{
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
 }
 
-.icon3{
-    padding-top: 35px;
+.texto3{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
 }

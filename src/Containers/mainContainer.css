@@ -5,13 +5,13 @@
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 75px;
 }
 
 .left-Container,
 .right-Container {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .left-Container {
@@ -19,7 +19,6 @@
   font-size: 4rem;
   justify-content: left;
   padding-right: 250px;
-  align-items: center;
 }
 
 .right-Container {
