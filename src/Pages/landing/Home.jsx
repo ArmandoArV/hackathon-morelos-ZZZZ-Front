@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarLanding from "../../Components/HeaderComponent/NavbarLanding";
 import "./home.css";
-import MainContainer from "../../Containers/MainContainer";
+import MainContainer from "../../Containers/MainContainer.cssgitn";
 
 const Home = () => {
   return (
