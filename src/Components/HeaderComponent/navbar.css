@@ -40,6 +40,27 @@ button{
     color: var(--amarillo);
 }
 
+#up{
+    position:absolute;
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    left: -5%;
+    top: -40%;
+    filter:blur(200px);
+  }
+  
+  #down{
+    position:absolute;
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    top:-20%;
+    right: -5%;
+    background: linear-gradient(80deg,#36338E,#5E51B7);
+    filter:blur(200px);
+  }
+
 button:hover{
     background-color: var(--amarillo);
 }

@@ -1,10 +1,10 @@
 .mainContainer {
+  z-index: 99;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
-  min-height: 100vh;
 }
 
 .left-Container,
@@ -15,16 +15,14 @@
 }
 
 .left-Container {
-  padding-top: 125px;
   color: white;
   font-size: 4rem;
   justify-content: left;
-  padding-right: 200px;
+  padding-right: 250px;
   align-items: center;
 }
 
 .right-Container {
-  padding-top: 100px;
   justify-content: right;
   align-items: right;
 }

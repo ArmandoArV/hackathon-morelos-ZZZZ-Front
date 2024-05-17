@@ -1,16 +1,5 @@
-<<<<<<< HEAD
 main {
-  background: linear-gradient(80deg, #8d74e8, #5d58f4);
-=======
-main{
-    z-index: 99;
-    height:1080px;
-}
-#aboutus{
-    background-color: white;
-    height:1080px;
-
->>>>>>> 85cdaeaa1baf81a9da961d0ef0db2a656671709e
+  height: 1080px;
 }
 
 

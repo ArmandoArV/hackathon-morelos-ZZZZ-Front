@@ -17,6 +17,8 @@ export default function NavbarLanding() {
 
   return (
     <div className="navbarContainer">
+      <div id="up"></div>
+      <div id="down"></div>
       <ul className="navbarList">
         <li className="navbarItem">
           <div className='logo-container'
