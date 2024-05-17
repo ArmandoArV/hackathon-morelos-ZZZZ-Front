@@ -7,7 +7,7 @@ const Home = () => {
     <>
     <NavbarLanding />
     <main id='home'>
-      
+      <h1>Aprender de finanzas nunca fue tan fácil</h1>
     </main>
     <section id= "aboutus">
         <h1>Conoce a Clara</h1>

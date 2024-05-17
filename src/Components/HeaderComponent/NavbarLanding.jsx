@@ -1,6 +1,7 @@
 import { navBarElements } from '../../constants';
 import React from 'react';
 import './navbar.css'
+
 export default function NavbarLanding() {
 
   const scrollToSection = (sectionId) => {
