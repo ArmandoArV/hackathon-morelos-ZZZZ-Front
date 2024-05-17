@@ -1,3 +1,9 @@
+:root {
+  --morado-rey: #5B57F4;
+  --amarillo: #FFE17E;
+  --tranistion: all 500ms ease;
+}
+
 *, *::before, *::after{
   margin:0;
   padding:0;
@@ -14,7 +20,7 @@ body{
   color:black;
   overflow-x:hidden;
   line-height: 1.7;
-  background-color:white;
+  background-color:#A19EF5;
 }
 
 #up{
@@ -36,4 +42,28 @@ body{
   right: -5%;
   background: linear-gradient(80deg,#36338E,#5E51B7);
   filter:blur(200px);
+}
+
+h1,h2,h3,h4,h5{
+  line-height: 1.5;
+  color:white;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+a{
+  color:white;
+  font-size: 1.2rem;
+}
+
+img{
+  display:flex;
+  object-fit: cover;
+  width:100%;
 }
