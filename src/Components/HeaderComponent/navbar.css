@@ -25,9 +25,9 @@
     flex-direction: row;
     gap: 2rem;
     margin-left: 4rem;
+    
 }
 button{
-    color:var(--morado-rey);
     background-color: white;
     height:2.5rem;
     width:8rem;
@@ -35,10 +35,33 @@ button{
     font-size: 18px;
     font-weight:600;
 
+    
 }
 .navbarItem a:hover {
     color: var(--amarillo);
 }
+
+#up{
+    position:absolute;
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    left: -5%;
+    top: -40%;
+    background: linear-gradient(80deg,#8D74E8,#5D58F4);
+    filter:blur(200px);
+  }
+  
+  #down{
+    position:absolute;
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    top:-20%;
+    right: -5%;
+    background: linear-gradient(80deg,#36338E,#5E51B7);
+    filter:blur(200px);
+  }
 
 button:hover{
     background-color: var(--amarillo);

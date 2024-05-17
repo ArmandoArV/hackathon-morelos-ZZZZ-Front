@@ -20,29 +20,7 @@ body{
   color:black;
   overflow-x:hidden;
   line-height: 1.7;
-  background-color:#A19EF5;
-}
-
-#up{
-  position:absolute;
-  width: 60%;
-  height: 120%;
-  border-radius: 50%;
-  left: -5%;
-  top: -40%;
-  background: linear-gradient(80deg,#8D74E8,#5D58F4);
-  filter:blur(200px);
-}
-
-#down{
-  position:absolute;
-  width: 60%;
-  height: 120%;
-  border-radius: 50%;
-  top:-20%;
-  right: -5%;
-  background: linear-gradient(80deg,#36338E,#5E51B7);
-  filter:blur(200px);
+  background-color: var(--morado-rey);
 }
 
 h1,h2,h3,h4,h5{
