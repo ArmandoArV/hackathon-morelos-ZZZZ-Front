@@ -2,6 +2,9 @@ import React from "react";
 import NavbarLanding from "../../Components/HeaderComponent/NavbarLanding";
 import "./home.css";
 import MainContainer from "../../Containers/MainContainer.jsx";
+import  Aboutus from "../../Containers/Aboutus.jsx";
+import Problem from "../../Containers/Problem.jsx";
+import Benefits from "../../Containers/Benefits.jsx"
 
 const Home = () => {
   return (
@@ -11,14 +14,16 @@ const Home = () => {
         <MainContainer/>
       </main>
 
-      <section id="aboutus">
-        <h1>Conoce a Clara</h1>
+      <section id="aboutus" className="about-us">
+        <Aboutus/>
       </section>
-      <section id="problem">
-        <h1>Problemática</h1>
+
+      <section id="problem" className="problem">
+        <Problem/>
       </section>
-      <section id="benefits">
-        <h1>Beneficios</h1>
+
+      <section id="benefits" className="benefits">
+        <Benefits/>
       </section>
     </>
   );

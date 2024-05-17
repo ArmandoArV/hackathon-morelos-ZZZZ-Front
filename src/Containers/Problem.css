@@ -1,0 +1,64 @@
+.problem{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 50px;
+}
+
+.titleP{
+    font-size: 6rem;
+    color: white;
+    text-align: left;
+}
+
+.datos{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.primerdato{
+    display: flex;
+    flex-direction: column;
+}
+
+.porcentaje{
+    font-size: 7rem;
+    color: white;
+}
+
+.textp{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.segundodato{
+    display: flex;
+    flex-direction: column;
+}
+
+.año{
+    font-size: 7rem;
+    color: white;
+}
+
+.texta{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.tercerdato{
+    display: flex;
+    flex-direction: column;
+}
+
+.numero{
+    font-size: 7rem;
+    color: white;
+}
+
+.textn{
+    font-size: 3.5rem;
+    color: white;
+}
