@@ -24,7 +24,6 @@ body{
   border-radius: 50%;
   left: -5%;
   top: -40%;
-  background: linear-gradient(80deg,#8D74E8,#5D58F4);
   filter:blur(200px);
 }
 

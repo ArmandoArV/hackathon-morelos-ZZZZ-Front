@@ -1,18 +1,21 @@
-main{
-    z-index: 99;
-}
-#aboutus{
-    background-color: white;
-    height:1080px;
-
+main {
+  background: linear-gradient(80deg, #8d74e8, #5d58f4);
 }
 
-#problem{
-    background-color: #936CFB;
-    height:1080px;
+
+#aboutus {
+  background-color: white;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
 }
 
-#benefits{
-    background-color: white;
-    height:1080px;
+#problem {
+  background-color: #936cfb;
+  height: 1080px;
+}
+
+#benefits {
+  background-color: white;
+  height: 1080px;
 }
