@@ -1,6 +1,7 @@
 import { navBarElements } from '../../constants';
 import React from 'react';
 import './navbar.css'
+import Logo from '../../images/logo_completo.png'
 
 export default function NavbarLanding() {
 
@@ -18,15 +19,15 @@ export default function NavbarLanding() {
     <div className="navbarContainer">
       <ul className="navbarList">
         <li className="navbarItem">
-          <a
+          <div className='logo-container'
             href="#"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("home");
             }}
           >
-            Home
-          </a>
+            <img src={Logo}></img>
+          </div>
         </li>
         {Object.entries(navBarElements).map(([key, element]) => (
           <li className="navbarItem" key={key}>
@@ -40,8 +41,15 @@ export default function NavbarLanding() {
               {element.name}
             </a>
           </li>
+          
         ))}
+        <div className='buttons-container'>
+          <button>Registrar</button>
+          <button className='inicio-btn'>Iniciar sesión</button>
+        </div>
+        
       </ul>
+      
     </div>
   );
 }

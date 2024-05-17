@@ -1,20 +1,45 @@
 .navbarContainer{
-    display:grid;
-    place-items: center;
-    position:fixed;
-    top:0;
-    left:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top:3rem;
     z-index:99;
+    font-size: 24px;
+    gap:5rem;
+  
 }
+
 .navbarList{
-    height:100%;
     display: flex;
-    justify-content: space-between;
+    gap:5rem;
     align-items: center;
     position:relative;
 }
-.navbarItem{
+
+.logo-container{
+    width:8rem;
+}
+
+.buttons-container {
     display: flex;
-    gap:3rem;
-    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: 4rem;
+}
+button{
+    color:var(--morado-rey);
+    background-color: white;
+    height:2.5rem;
+    width:8rem;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    font-weight:600;
+
+}
+.navbarItem a:hover {
+    color: var(--amarillo);
+}
+
+button:hover{
+    background-color: var(--amarillo);
 }
