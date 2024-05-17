@@ -1,11 +1,11 @@
 main {
-  min-height:100%;
+  min-height:100vh;
 }
 
 
 #aboutus {
   background-color: white;
-  height: 1080px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
