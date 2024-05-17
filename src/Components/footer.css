@@ -1,0 +1,48 @@
+
+.footer{
+    width: 100%;
+    background-color: #6243BB;
+    padding: 10px;
+    color: white;
+    height: 10rem;
+}
+.footercont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+}
+
+.logo-footer-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+
+}
+
+.footerlogo img{
+    height:7rem;
+    width:9rem;
+    object-fit: contain;
+}
+
+.footertext {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; 
+    color: white;
+    letter-spacing: 30px;
+}
+
+.fa-facebook{
+    padding-left: 30px;
+}

@@ -1,7 +1,7 @@
 import { navBarElements } from '../../constants';
 import React from 'react';
 import './navbar.css'
-import Logo from '../../images/logo_completo.png'
+import Logo from '../../images/logo_completo.svg'
 import {Link} from 'react-router-dom'
 
 export default function NavbarLanding() {
@@ -49,7 +49,7 @@ export default function NavbarLanding() {
         ))}
         <div className='buttons-container'>
           <button> <Link to="/registro"><font color ="#5B57F4">Registro</font></Link></button>
-          <button><Link to="/iniciar-sesion"><font color ="#5B57F4">Iniciar sesión</font></Link></button>
+          <button className="inicio-btn"><Link to="/iniciar-sesion"><font color ="#5B57F4">Iniciar sesión</font></Link></button>
         </div>
         
       </ul>

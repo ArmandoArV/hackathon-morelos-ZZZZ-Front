@@ -17,7 +17,14 @@
 }
 
 .logo-container{
-    width:8rem;
+    width:12rem;
+
+}
+
+.logo-container img{
+    display:flex;
+    object-fit: cover;
+    width:100%;
 }
 
 .buttons-container {
@@ -27,7 +34,8 @@
     margin-left: 4rem;
     
 }
-button{
+
+.buttons-container button{
     background-color: white;
     height:2.5rem;
     width:8rem;
@@ -36,6 +44,10 @@ button{
     font-weight:600;
 
     
+}
+
+.inicio-btn{
+    width:22rem;
 }
 .navbarItem a:hover {
     color: var(--amarillo);
@@ -52,7 +64,7 @@ button{
     filter:blur(200px);
   }
   
-  #down{
+#down{
     position:absolute;
     width: 60%;
     height: 120%;
@@ -61,8 +73,8 @@ button{
     right: -5%;
     background: linear-gradient(80deg,#36338E,#5E51B7);
     filter:blur(200px);
-  }
+}
 
-button:hover{
+.buttons-container button:hover{
     background-color: var(--amarillo);
 }

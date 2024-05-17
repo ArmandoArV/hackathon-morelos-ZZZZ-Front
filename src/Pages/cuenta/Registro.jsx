@@ -1,21 +1,25 @@
 import React from 'react'
+import './registro.css'
 
 const Registro = () => {
   return (
-    <main>
-      <h1> Crear cuenta</h1>
+    <main className='registro-container'>
+      <div className='title'>
+        <h1> Crear cuenta</h1>
+      </div>
       <div className='form-container'>
         <form>
             <input type="text" name="name" placeholder="Nombre" id="input-name" required/>
-            <input type="text" name="apellido1" placeholder="Primer Apellido" id="input-apellido1" required/>
-            <input type="text" name="apellido2" placeholder="Segundo Apellido" id="input-apellido2" required/>
-            <input type="text" name="email" placeholder="Enter your email address" required/>
-            <input type="tel" name="phone" placeholder="Enter your mobile number" required/>
-            <button type="submit" className="btn-submitt">Crear Cuenta</button>
-
+            <input type="apellido1" name="apellido1" placeholder="Primer Apellido" id="input-apellido1" required/>
+            <input type="apellido2" name="apellido2" placeholder="Segundo Apellido" id="input-apellido2" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+            <input type="password" name="password" placeholder="Contraseña" required/>
+            <input type="password" name="password-confirmation" placeholder="Confirmar Contraseña" required/>
+            <div>
+                <button type="submit" className="btn-submitt">Crear Cuenta</button>
+            </div>
             </form>
       </div>
-      
         <span></span>
      
     </main>

@@ -2,6 +2,7 @@
   --morado-rey: #5B57F4;
   --amarillo: #FFE17E;
   --tranistion: all 500ms ease;
+
 }
 
 *, *::before, *::after{
@@ -16,10 +17,10 @@
 }
 
 body{
-  font-family: "Lato", sans-serif ;
-  color:black;
+  font-family: "Poppins" ;
   overflow-x:hidden;
   line-height: 1.7;
+
   background-color: var(--morado-rey);
 }
 
@@ -41,8 +42,3 @@ a{
   font-size: 1.2rem;
 }
 
-img{
-  display:flex;
-  object-fit: cover;
-  width:100%;
-}

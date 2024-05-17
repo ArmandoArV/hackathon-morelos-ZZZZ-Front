@@ -1,19 +1,24 @@
-main{
-    z-index: 99;
-    height:1080px;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
 }
-#aboutus{
+
+#aboutus {
     background-color: white;
-    height:1080px;
+    height: 1080px;
 
 }
 
-#problem{
+#problem {
     background-color: #936CFB;
-    height:1080px;
+    height: 1080px;
 }
 
-#benefits{
+#benefits {
     background-color: white;
-    height:1080px;
+    height: 1080px;
 }

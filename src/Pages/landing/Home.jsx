@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarLanding from '../../Components/HeaderComponent/NavbarLanding'
 import './home.css'
+import Footer from '../../Components/Footer'
 
 const Home = () => {
   return (
@@ -17,8 +18,9 @@ const Home = () => {
         
     </section>
     <section id = "benefits">
-        <h1>Beneficios</h1>
+        <h1>Beneficios</h1>     
     </section>
+    <Footer />
     </>
   )
 }
