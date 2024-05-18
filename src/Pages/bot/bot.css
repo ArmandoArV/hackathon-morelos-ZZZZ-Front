@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.container{
+    background-color: #fff;
+}
+
 .bot-header img{
     height:300px;
     margin-top:4rem;
@@ -40,3 +44,4 @@
     height: 35rem;
     width: 35rem;
 }
+
