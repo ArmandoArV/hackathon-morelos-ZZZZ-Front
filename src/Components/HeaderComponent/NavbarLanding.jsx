@@ -48,6 +48,7 @@ export default function NavbarLanding() {
           
         ))}
         <div className='buttons-container'>
+          <button> <Link to="/Dashboard"><font color ="#5B57F4">Dashboard</font></Link></button>
           <button> <Link to="/registro"><font color ="#5B57F4">Registro</font></Link></button>
           <button className="inicio-btn"><Link to="/iniciar-sesion"><font color ="#5B57F4">Iniciar sesión</font></Link></button>
         </div>

@@ -1,0 +1,117 @@
+.dashboard{
+    padding: 4rem;
+}
+
+.widgets{
+    display: flex;
+    flex-direction: column;
+}
+
+.arriba{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.deuda{
+    align-items: center;
+}
+.rectangulod {
+    width: 450px;
+    height: 250px;
+    background-color: #FEE492;
+    border-radius: 25px; 
+    position: relative;
+}
+
+.deudasw{
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+
+}
+
+.montod{
+    font-size:3rem;
+    color: #5B57F4;
+    text-align: center;
+}
+
+.ingresos{
+    align-items: center;
+}
+.rectanguloi {
+    width: 250px;
+    height: 250px;
+    background-color: #FEE492;
+    border-radius: 25px; 
+    position: relative;
+}
+
+.ingresosw{
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+
+}
+
+.montoi{
+    font-size:3rem;
+    color: #5B57F4;
+    text-align: center;
+}
+
+.egresos{
+    align-items: center;
+}
+.rectanguloe {
+    width: 250px;
+    height: 250px;
+    background-color: #FEE492;
+    border-radius: 25px; 
+    position: relative;
+}
+
+.egresosw{
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+
+}
+
+.montoe{
+    font-size:3rem;
+    color: #5B57F4;
+    text-align: center;
+}
+
+.abajo{
+    display: flex;
+    text-align: left;
+    align-items: left;
+    padding-top: 50px;
+}
+
+.grafica{
+    align-items: center;
+}
+.rectangulog {
+    width: 450px;
+    height: 400px;
+    background-color: #FEE492;
+    border-radius: 25px; 
+    position: relative;
+}
+
+.finanzas{
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+
+}

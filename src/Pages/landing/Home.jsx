@@ -5,6 +5,7 @@ import Benefits from "../../Containers/Benefits.jsx"
 import './home.css'
 import Footer from '../../Components/Footer'
 import NavbarLanding from "../../Components/HeaderComponent/NavbarLanding";
+import Dashboard from "../../Containers/Dashboard.jsx";
 
 const Home = () => {
   return (
@@ -24,6 +25,10 @@ const Home = () => {
 
       <section id="benefits" className="benefits">
         <Benefits/>
+      </section>
+
+      <section id="Dashboard" className="Dashboard">
+        <Dashboard/>
       </section>
       <div>
         <Footer />
