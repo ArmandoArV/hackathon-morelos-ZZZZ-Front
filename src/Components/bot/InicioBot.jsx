@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import BotIcon from "../../images/botIcon.png";
 import "./bot.css";
-import groupStars1 from "../../images/groupStars1.svg";
-import groupStars2 from "../../images/groupStars2.svg";
 import { API_URL } from "../../constants";
 
 const InicioBot = () => {
@@ -100,7 +98,7 @@ const InicioBot = () => {
                 className="message"
                 onClick={() => handleOptionClick(option.opcion)}
               >
-                {option.questionName} - Opción {option.opcion}
+                {option.questionName}
               </button>
             ))}
           </>
@@ -123,7 +121,7 @@ const InicioBot = () => {
                 className="message"
                 onClick={() => handleSecondOptionClick(option.opcion)}
               >
-                {option.questionName} - Opción {option.opcion}
+                {option.questionName}
               </button>
             ))}
           </>
