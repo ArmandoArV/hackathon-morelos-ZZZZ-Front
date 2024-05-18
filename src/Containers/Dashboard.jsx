@@ -1,8 +1,7 @@
 import React from "react";
 import "./Dashboard.css";
 import clara from "../images/clara.png"
-
-
+import LateralNavbar from "../Components/LateralNavbar";
 
 export default function Dashboard() {
   return (
@@ -58,7 +57,9 @@ export default function Dashboard() {
                         <img className="clara" src={clara}></img>
                     </div>
                 </div>
-
+                <div>
+                    <LateralNavbar />
+                </div>
             </div>
         </div>
     </>
