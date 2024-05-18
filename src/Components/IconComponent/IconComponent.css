@@ -1,0 +1,33 @@
+.icon {
+  width: 20em;
+  height: 30em;
+  background-color: #936cfb;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  height: 15em;
+  width: 15em;
+}
+
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.textContainer {
+  height: 10em;
+  color: white;
+  text-align: center;
+}
+
+.textContainer p {
+  font-size: 1.5rem;
+}

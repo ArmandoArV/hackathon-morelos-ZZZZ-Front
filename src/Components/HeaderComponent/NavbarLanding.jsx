@@ -1,11 +1,10 @@
-import { navBarElements } from '../../constants';
-import React from 'react';
-import './navbar.css'
-import Logo from '../../images/logo_completo.svg'
-import {Link} from 'react-router-dom'
+import { navBarElements } from "../../constants";
+import React from "react";
+import "./navbar.css";
+import Logo from "../../images/logo_completo.svg";
+import { Link } from "react-router-dom";
 
 export default function NavbarLanding() {
-
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -17,46 +16,60 @@ export default function NavbarLanding() {
   };
 
   return (
-    
-    <div className="navbarContainer">
-      <div id="up"></div>
-      <div id="down"></div>
-      <ul className="navbarList">
-        <li className="navbarItem">
-          <div className='logo-container'
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
-            }}
-          >
-            <img src={Logo}></img>
-          </div>
-        </li>
-        {Object.entries(navBarElements).map(([key, element]) => (
-          <li className="navbarItem" key={key}>
-            <a
-              href={element.id}
+    <>
+      <div className="navbarContainer">
+        <ul className="navbarList">
+          <li className="navbarItem">
+            <div
+              className="logo-container"
+              href="#"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection(element.id.substring(1));
+                scrollToSection("home");
               }}
             >
-              {element.name}
-            </a>
+              <img src={Logo} alt=""></img>
+            </div>
           </li>
-          
-        ))}
-        <div className='buttons-container'>
-          <button> <Link to="/Dashboard"><font color ="#5B57F4">Dashboard</font></Link></button>
-          <button> <Link to="/registro"><font color ="#5B57F4">Registro</font></Link></button>
-          <button className="inicio-btn"><Link to="/iniciar-sesion"><font color ="#5B57F4">Iniciar sesión</font></Link></button>
+          {Object.entries(navBarElements).map(([key, element]) => (
+            <li className="navbarItem" key={key}>
+              <a
+                href={element.id}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(element.id.substring(1));
+                }}
+              >
+                {element.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="buttons-container">
+          <Link to="/registro">
+            <button className="elementButton">
+              <p>Registro</p>
+            </button>
+          </Link>
+          <Link to="/iniciar-sesion">
+            <button className="elementButton">
+              <p>Iniciar sesión</p>
+            </button>
+          </Link>
         </div>
-        
-      </ul>
-      
-    </div>
+      </div>
+      <div className="buttons-container-external">
+        <Link to="/registro">
+          <button className="elementButton-external">
+            <p>Registro</p>
+          </button>
+        </Link>
+        <Link to="/iniciar-sesion">
+          <button className="elementButton-external">
+            <p>Iniciar sesión</p>
+          </button>
+        </Link>
+      </div>
+    </>
   );
 }
-
-

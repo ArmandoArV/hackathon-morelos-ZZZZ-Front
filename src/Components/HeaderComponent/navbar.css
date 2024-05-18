@@ -1,81 +1,167 @@
-.navbarContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top:3rem;
-     z-index:99;
-     font-size: 24px;
-     gap:5rem;
-   
- }
- 
- .navbarList{
-     display: flex;
-     gap:5rem;
-     align-items: center;
-     position:relative;
- }
- 
- .logo-container{
-     width:12rem;
- 
- }
- 
- .logo-container img{
-     display:flex;
-     object-fit: cover;
-     width:100%;
- }
- 
- .buttons-container {
-     display: flex;
-     flex-direction: row;
-     gap: 2rem;
-     margin-left: 4rem;
-     
- }
- 
- .buttons-container button{
-     border: 3px solid white;
-     background-color: transparent;
-     height:2.5rem;
-     width:8rem;
-     border-radius: 0.5rem;
-     font-size: 18px;
-     font-weight:400;
-     
- }
- 
- .inicio-btn{
-     width:22rem;
- }
- .navbarItem a:hover {
-     color: var(--amarillo);
- }
- 
- #up{
-     position:absolute;
-     width: 60%;
-     height: 120%;
-     border-radius: 50%;
-     left: -5%;
-     top: -40%;
-     background: linear-gradient(80deg,#8D74E8,#5D58F4);
-     filter:blur(200px);
-   }
-   
- #down{
-     position:absolute;
-     width: 60%;
-     height: 120%;
-     border-radius: 50%;
-     top:-20%;
-     right: -5%;
-     background: linear-gradient(80deg,#36338E,#5E51B7);
-     filter:blur(200px);
- }
- 
- .buttons-container button:hover{
-     background-color: var(--amarillo);
-     color: var(--morado-rey);
- }
+.navbarContainer {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbarContainer .navbarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbarContainer .navbarList .navbarItem {
+  margin: 0 10px;
+}
+
+.navbarContainer .navbarList .navbarItem a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.navbarContainer .navbarList .navbarItem a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: var(--hover-color);
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.navbarContainer .navbarList .navbarItem a:hover {
+  color: var(--hover-color);
+}
+.navbarContainer .navbarList .navbarItem a:hover::after {
+  width: 100%;
+}
+
+.navbarContainer .navbarList .navbarItem button {
+  width: 130px;
+  height: 40px;
+  border: var(--hover-color) 2px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: #ffffff;
+  z-index: 2;
+  line-height: 40px;
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.navbarContainer .navbarList .navbarItem button:hover {
+  border: none;
+}
+
+.navbarContainer .navbarList .navbarItem button::before,
+.navbarContainer .navbarList .navbarItem button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.navbarContainer .navbarList .navbarItem button::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.navbarContainer .navbarList .navbarItem button::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.navbarContainer .navbarList .navbarItem button:hover::before,
+.navbarContainer .navbarList .navbarItem button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.navbarContainer .navbarList.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 10em;
+  width: 10em;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.elementButton {
+  padding: 0.5em;
+  margin: 1em;
+  width: 10em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.buttons-container-external {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbarContainer {
+    display: none;
+  }
+
+  .buttons-container-external {
+    display: block;
+  }
+
+  .elementButton-external {
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+  }
+}

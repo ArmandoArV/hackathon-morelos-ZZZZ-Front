@@ -1,9 +1,9 @@
 .mainContainer {
-  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 75px;
 }
 
 .left-Container {
@@ -11,10 +11,14 @@
   color: white;
   font-size: 6rem;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.color{
-  color: #FEE492;
+.color {
+  color: #fee492;
 }
 .mainContainer {
   z-index: 99;
@@ -31,6 +35,15 @@
   justify-content: center;
 }
 
-.color{
-  color: #FEE492;
+.color {
+  color: #fee492;
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    padding-top: 0px;
+  }
+  .left-Container {
+    font-size: 4rem;
+  }
 }

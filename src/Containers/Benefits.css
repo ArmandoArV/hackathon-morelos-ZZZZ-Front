@@ -1,93 +1,110 @@
-.benefits{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 30px;
+.benefits {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 30px;
 }
 
-.titleb{
-    font-size: 4rem;
-    color: black;
-    text-align: left;
+.titleb {
+  font-size: 4rem;
+  color: black;
+  text-align: left;
 }
 
-.icon{
-    display: flex;
-    flex-direction: row;
-    gap: 150px;
-    justify-content: center;
-    padding-top: 75px;
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-.primericon{
+@media (max-width: 767px) {
+  .titleb {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .iconContainer {
     display: flex;
     flex-direction: column;
-}
+    gap: 50px;
+    justify-content: center;
+    padding-top: 0px;
+  }
 
-.rectangulo1{
-    width: 300px;         
-    height: 350px;        
-    background-color: #936CFB; 
+  .primericon {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .rectangulo1 {
+    width: 200px;
+    height: 250px;
+    background-color: #936cfb;
     position: relative;
     border-radius: 15px;
-}
+  }
 
-.icono1{
-    height: 100px;
-    width: 100px;
-    position: absolute;    
-    top: 10%; 
-    left: 30%;             
-}
+  .icono1 {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
 
-.texto1{
-    padding-top: 60%;
-    font-size: 1.2rem;
+  .texto1 {
+    padding-top: 50%;
+    font-size: 1rem;
     color: white;
     text-align: center;
-}
+  }
 
-.rectangulo2{
-    width: 300px;         
-    height: 350px;        
-    background-color: #936CFB; 
+  .rectangulo2 {
+    width: 200px;
+    height: 250px;
+    background-color: #936cfb;
     position: relative;
     border-radius: 15px;
-}
+  }
 
-.icono2{
-    height: 100px;
-    width: 100px;
-    position: absolute;    
-    top: 10%; 
-    left: 30%;             
-}
+  .icono2 {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
 
-.texto2{
-    padding-top: 60%;
-    font-size: 1.2rem;
+  .texto2 {
+    padding-top: 50%;
+    font-size: 1rem;
     color: white;
     text-align: center;
-}
+  }
 
-.rectangulo3{
-    width: 300px;         
-    height: 350px;        
-    background-color: #936CFB; 
+  .rectangulo3 {
+    width: 200px;
+    height: 250px;
+    background-color: #936cfb;
     position: relative;
     border-radius: 15px;
-}
+  }
 
-.icono3{
-    height: 100px;
-    width: 100px;
-    position: absolute;    
-    top: 10%; 
-    left: 30%;             
-}
+  .icono3 {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
 
-.texto3{
-    padding-top: 60%;
-    font-size: 1.2rem;
+  .texto3 {
+    padding-top: 50%;
+    font-size: 1rem;
     color: white;
     text-align: center;
+  }
 }
