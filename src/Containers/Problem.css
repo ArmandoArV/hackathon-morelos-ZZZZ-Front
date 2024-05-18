@@ -1,7 +1,7 @@
 .problem{
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .titleP{
@@ -24,12 +24,12 @@
 }
 
 .porcentaje{
-    font-size: 7rem;
+    font-size: 5.5rem;
     color: white;
 }
 
 .textp{
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -39,12 +39,12 @@
 }
 
 .año{
-    font-size: 7rem;
+    font-size: 5.5rem;
     color: white;
 }
 
 .texta{
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -54,11 +54,11 @@
 }
 
 .numero{
-    font-size: 7rem;
+    font-size: 5.5rem;
     color: white;
 }
 
 .textn{
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: white;
 }

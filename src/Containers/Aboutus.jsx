@@ -13,7 +13,8 @@ export default function Aboutus() {
           <div className="text">
               <p>
               Freya es tu nueva asesora en situaciones financieras, te ayudara a conocer mejor tus ingresos, egresos y deudas hasta te puede ayudar
-              dando mensajes para que aprendas a manejar mejor tu dinero. 
+              dando mensajes para que aprendas a manejar mejor tu dinero.<br></br>Nuestro enfoque va a mujeres jóvenes en México para que puedan sacar 
+              provecho de sus ingresos y puedan aprender a llevar una vida economicamente más estable.
               </p>
           </div>
         </div>

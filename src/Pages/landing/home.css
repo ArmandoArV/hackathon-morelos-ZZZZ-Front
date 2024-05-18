@@ -1,21 +1,24 @@
 main {
-  min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
 }
 
-
 #aboutus {
-  background-color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+    background-color: white;
+    min-height: 100vh;
+
 }
 
 #problem {
-  background-color: #936cfb;
-  height: 1080px;
+    background-color: #936CFB;
+    min-height: 100vh;
 }
 
 #benefits {
-  background-color: white;
-  height: 1080px;
+    background-color: white;
+    min-height: 100vh;
 }

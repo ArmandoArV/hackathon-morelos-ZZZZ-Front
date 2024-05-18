@@ -11,26 +11,26 @@ export default function Problem() {
         <div className="datos">
             <div className="primerdato">
                 <div className="porcentaje">
-                    <p><b>60%</b></p>
+                    <p><b>70%</b></p>
                 </div>
                 <div className="textp">
-                    <p>Text</p>
+                    <p>de las mujeres<br></br>no tienen tarjeta <br></br> de crédito</p>
                 </div>
             </div>
             <div className="segundodato">
                 <div className="año">
-                    <p><b>2010</b></p>
+                    <p><b>52%</b></p>
                 </div>
                 <div className="texta">
-                    <p>Text</p>
+                    <p>de las mujeres <br></br> no tienen cuenta<br></br>bancaria</p>
                 </div>
             </div>
             <div className="tercerdato">
                 <div className="numero">
-                    <p><b>30</b></p>
+                    <p><b>51.2%</b></p>
                 </div>
                 <div className="textn">
-                    <p>Text</p>
+                    <p>de la población<br></br>en México son<br></br> mujeres</p>
                 </div>
             </div>
         </div>

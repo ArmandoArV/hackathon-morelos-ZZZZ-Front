@@ -1,16 +1,16 @@
-import React from "react";
-import NavbarLanding from "../../Components/HeaderComponent/NavbarLanding";
-import "./home.css";
 import MainContainer from "../../Containers/MainContainer.jsx";
 import  Aboutus from "../../Containers/Aboutus.jsx";
 import Problem from "../../Containers/Problem.jsx";
 import Benefits from "../../Containers/Benefits.jsx"
+import './home.css'
+import Footer from '../../Components/Footer'
+import NavbarLanding from "../../Components/HeaderComponent/NavbarLanding";
 
 const Home = () => {
   return (
     <>
-      <NavbarLanding />
-      <main id="home" className="mainContainer">
+    <NavbarLanding />
+     <main id="home" className="mainContainer">
         <MainContainer/>
       </main>
 
@@ -25,8 +25,11 @@ const Home = () => {
       <section id="benefits" className="benefits">
         <Benefits/>
       </section>
+      <div>
+        <Footer />
+      </div>
     </>
   );
 };
 
-export default Home;
+export default Home;
