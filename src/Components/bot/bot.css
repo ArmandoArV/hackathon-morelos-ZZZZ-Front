@@ -1,20 +1,61 @@
-.bot-container {
+.chatBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 60em;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #f5f5f5;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  padding-top: 30px;
 }
 
 .bot-icon {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 20px;
+  width: 100%; /* Adjust size as needed */
+  height: 100%; /* Adjust size as needed */
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.senderMsg {
+  display: flex;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.senderImgContainer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .message {
-  background-color: #f1f1f1;
   padding: 10px;
   border-radius: 5px;
-  margin: 5px 0;
-  width: 100%;
-  text-align: center;
+  margin: 0.5em;
+  width: auto; /* Adjust width as needed */
+  margin-top: 5em;
 }

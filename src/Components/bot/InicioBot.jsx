@@ -82,58 +82,82 @@ const InicioBot = () => {
 
   return (
     <>
-      <img src={BotIcon} alt="Bot Icon" className="bot-icon" />
-      <div className="bot-container">
+      <div className="chatBox">
         {Object.keys(options).length > 0 ? (
           <>
-            <div></div>
-            <p>
-              Hola, soy Clara, tu asistente financiero. ¿En qué puedo ayudarte
-              hoy?
-            </p>
-            <p>Selecciona una opción para comenzar a aprender sobre finanzas</p>
-            {Object.values(options).map((option) => (
-              <button
-                key={option.idQuestions}
-                className="message"
-                onClick={() => handleOptionClick(option.opcion)}
-              >
-                {option.questionName}
-              </button>
-            ))}
+            <div className="senderMsg">
+              <div className="senderImgContainer">
+                <img src={BotIcon} alt="Bot Icon" className="bot-icon" />
+              </div>
+              <div className="chatContainer">
+                <p>
+                  Hola, soy Clara, tu asistente financiero. ¿En qué puedo
+                  ayudarte hoy?
+                </p>
+                <p>
+                  Selecciona una opción para comenzar a aprender sobre finanzas
+                </p>
+              </div>
+            </div>
+            <div className="optionsContainer">
+              {Object.values(options).map((option) => (
+                <button
+                  key={option.idQuestions}
+                  className="message"
+                  onClick={() => handleOptionClick(option.opcion)}
+                >
+                  {option.questionName}
+                </button>
+              ))}
+            </div>
           </>
         ) : (
           <div className="message">Loading...</div>
         )}
         {currentOption && Object.keys(secondOptions).length > 0 && (
           <>
-            <p>
-              Selecciona una opción para aprender sobre{" "}
-              {
-                ["AFORE", "Ahorrar", "Finanzas", "Inversiones"][
-                  currentOption - 1
-                ]
-              }
-            </p>
-            {Object.values(secondOptions).map((option) => (
-              <button
-                key={option.idQuestions}
-                className="message"
-                onClick={() => handleSecondOptionClick(option.opcion)}
-              >
-                {option.questionName}
-              </button>
-            ))}
+            <div className="senderMsg">
+              <div className="senderImgContainer">
+                <img src={BotIcon} alt="Bot Icon" className="bot-icon" />
+              </div>
+              <div className="chatContainer">
+                <p>
+                  Selecciona una opción para aprender sobre{" "}
+                  {
+                    ["AFORE", "Ahorrar", "Finanzas", "Inversiones"][
+                      currentOption - 1
+                    ]
+                  }
+                </p>
+              </div>
+            </div>
+            <div className="optionsContainer">
+              {Object.values(secondOptions).map((option) => (
+                <button
+                  key={option.idQuestions}
+                  className="message"
+                  onClick={() => handleSecondOptionClick(option.opcion)}
+                >
+                  {option.questionName}
+                </button>
+              ))}
+            </div>
           </>
         )}
         {currentSecondOption && Object.keys(answers).length > 0 && (
           <>
-            <p>Respuestas:</p>
-            {Object.values(answers).map((answer) => (
-              <div key={answer.idAnswers} className="message">
-                {answer.answers || answer.answer}
+            <div className="senderMsg">
+              <div className="senderImgContainer">
+                <img src={BotIcon} alt="Bot Icon" className="bot-icon" />
               </div>
-            ))}
+              <div className="chatContainer">
+                {Object.values(answers).map((answer) => (
+                  <div key={answer.idAnswers} className="message">
+                    {answer.answers || answer.answer}
+                  </div>
+                ))}
+              </div>
+            </div>
           </>
         )}
       </div>
