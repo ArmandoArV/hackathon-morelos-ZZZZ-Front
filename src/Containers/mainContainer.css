@@ -1,0 +1,18 @@
+.mainContainer {
+  z-index: 99;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 75px;
+}
+
+.left-Container {
+  z-index: 2;
+  color: white;
+  font-size: 6rem;
+  justify-content: center;
+}
+
+.color{
+  color: #FEE492;
+}

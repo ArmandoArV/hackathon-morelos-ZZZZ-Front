@@ -9,16 +9,16 @@ main {
 
 #aboutus {
     background-color: white;
-    height: 1080px;
+    min-height: 100vh;
 
 }
 
 #problem {
     background-color: #936CFB;
-    height: 1080px;
+    min-height: 100vh;
 }
 
 #benefits {
     background-color: white;
-    height: 1080px;
+    min-height: 100vh;
 }

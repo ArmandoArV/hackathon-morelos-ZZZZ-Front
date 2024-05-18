@@ -1,80 +1,80 @@
 .navbarContainer{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top:3rem;
-    z-index:99;
-    font-size: 24px;
-    gap:5rem;
-  
-}
-
-.navbarList{
     display: flex;
-    gap:5rem;
+    justify-content: center;
     align-items: center;
-    position:relative;
-}
-
-.logo-container{
-    width:12rem;
-
-}
-
-.logo-container img{
-    display:flex;
-    object-fit: cover;
-    width:100%;
-}
-
-.buttons-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-left: 4rem;
-    
-}
-
-.buttons-container button{
-    background-color: white;
-    height:2.5rem;
-    width:8rem;
-    border-radius: 0.5rem;
-    font-size: 18px;
-    font-weight:600;
-
-    
-}
-
-.inicio-btn{
-    width:22rem;
-}
-.navbarItem a:hover {
-    color: var(--amarillo);
-}
-
-#up{
-    position:absolute;
-    width: 60%;
-    height: 120%;
-    border-radius: 50%;
-    left: -5%;
-    top: -40%;
-    background: linear-gradient(80deg,#8D74E8,#5D58F4);
-    filter:blur(200px);
-  }
-  
-#down{
-    position:absolute;
-    width: 60%;
-    height: 120%;
-    border-radius: 50%;
-    top:-20%;
-    right: -5%;
-    background: linear-gradient(80deg,#36338E,#5E51B7);
-    filter:blur(200px);
-}
-
-.buttons-container button:hover{
-    background-color: var(--amarillo);
-}
+    padding-top:3rem;
+     z-index:99;
+     font-size: 24px;
+     gap:5rem;
+   
+ }
+ 
+ .navbarList{
+     display: flex;
+     gap:5rem;
+     align-items: center;
+     position:relative;
+ }
+ 
+ .logo-container{
+     width:12rem;
+ 
+ }
+ 
+ .logo-container img{
+     display:flex;
+     object-fit: cover;
+     width:100%;
+ }
+ 
+ .buttons-container {
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+     margin-left: 4rem;
+     
+ }
+ 
+ .buttons-container button{
+     background-color: white;
+     height:2.5rem;
+     width:8rem;
+     border-radius: 0.5rem;
+     font-size: 18px;
+     font-weight:600;
+ 
+     
+ }
+ 
+ .inicio-btn{
+     width:22rem;
+ }
+ .navbarItem a:hover {
+     color: var(--amarillo);
+ }
+ 
+ #up{
+     position:absolute;
+     width: 60%;
+     height: 120%;
+     border-radius: 50%;
+     left: -5%;
+     top: -40%;
+     background: linear-gradient(80deg,#8D74E8,#5D58F4);
+     filter:blur(200px);
+   }
+   
+ #down{
+     position:absolute;
+     width: 60%;
+     height: 120%;
+     border-radius: 50%;
+     top:-20%;
+     right: -5%;
+     background: linear-gradient(80deg,#36338E,#5E51B7);
+     filter:blur(200px);
+ }
+ 
+ .buttons-container button:hover{
+     background-color: var(--amarillo);
+ }
