@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import { API_URL } from "../constants";
 import clara from "../images/clara.png";
 import DoubleChartComponent from "../Components/DoubleChartComponent/DoubleChartComponent";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   const [debt, setDebt] = useState(0);
@@ -142,15 +143,15 @@ export default function Dashboard() {
               datasets={[
                 {
                   data: chartData,
-                  label: "Income",
-                  borderColor: "#F457D1",
-                  backgroundColor: "#F457D1",
+                  label: "Ingreso",
+                  borderColor: "#5B57F4",
+                  backgroundColor: "#5B57F4",
                 },
                 {
                   data: secondChartData,
-                  label: "Outcome",
-                  borderColor: "#5B57F4",
-                  backgroundColor: "#5B57F4",
+                  label: "Egreso",
+                  borderColor: "#F457D1",
+                  backgroundColor: "#F457D1",
                 },
               ]}
               labels={chartLabels}
@@ -159,7 +160,21 @@ export default function Dashboard() {
               cName="monthly-chart" // Optional custom class name for styling
             />
           </div>
-          <div className="bottomRightContainer"></div>
+          <div className="bottomRightContainer">
+            <div className="botLeftContainer">
+              <div className="adContainer">
+                <p>¿Necesitas ayuda?</p>
+              </div>
+              <Link to="/assistant">
+                <div className="chatButton">Charlemos</div>
+              </Link>
+            </div>
+            <div className="botRightContainer">
+              <div className="imgContainer">
+                <img src={clara} alt="clara" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

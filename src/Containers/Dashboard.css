@@ -121,7 +121,7 @@
 
 .bottomRightContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   width: 60%;
   height: 100%;
@@ -135,4 +135,63 @@
   border-radius: 2.5rem;
   margin: 0.5em;
   padding: 3em;
+}
+
+.botLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 5em;
+  margin-bottom: 50%;
+  position: relative;
+}
+
+.adContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.adContainer p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.chatButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 3em;
+  background: #5b57f4;
+  color: white;
+  border-radius: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.imgContainer {
+  height: 25em;
+  width: 25em;
+  margin-top: 4em;
+}
+
+.imgContainer img {
+  height: 100%;
+  width: 100%;
 }

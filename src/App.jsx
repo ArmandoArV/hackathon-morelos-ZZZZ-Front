@@ -5,6 +5,7 @@ import Registro from "./Pages/cuenta/Registro";
 import Login from "./Pages/cuenta/Login";
 import PersonalInfo from "./Pages/bot/PersonalInfo";
 import Dashboard from "./Containers/Dashboard";
+import Assistant from "./Pages/assistant/Assistant";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/iniciar-sesion" element={<Login />} />
             <Route path="/informacion-personal" element={<PersonalInfo />} />
             <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/assistant" element={<Assistant />} />
           </Routes>
         </Router>
       </>
