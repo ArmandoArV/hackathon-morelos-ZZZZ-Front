@@ -83,6 +83,13 @@ export default function Dashboard() {
     fetchgetMonthlyPersonalInfo();
   }, [fetchDebt, fetchIncomeOutcome, fetchgetMonthlyPersonalInfo]);
 
+  function ParseNumber(number) {
+    return parseFloat(number).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+  }
+
   console.log("labels", chartLabels);
   console.log("values", chartData);
   console.log("values2", secondChartData);
@@ -110,13 +117,7 @@ export default function Dashboard() {
               <p>Ingresos</p>
             </div>
             <div className="valueContainer">
-              <p className="valueText">
-                $
-                {income.toLocaleString("en-US", {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })}
-              </p>
+              <p className="valueText">${income}</p>
             </div>
           </div>
           <div className="rightContainer">
@@ -124,13 +125,7 @@ export default function Dashboard() {
               <p>Egresos</p>
             </div>
             <div className="valueContainer">
-              <p className="valueText">
-                $
-                {outcome.toLocaleString("en-US", {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })}
-              </p>
+              <p className="valueText">${outcome}</p>
             </div>
           </div>
         </div>
