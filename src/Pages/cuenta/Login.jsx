@@ -52,7 +52,9 @@ const Login = () => {
           showSuccessAlert("Éxito", "Inicio de sesión exitoso", () => {
             window.location.href = "/dashboard";
           });
+          console.log(data);
           localStorage.setItem("token", data.token);
+          localStorage.setItem("userId", data.userId);
         } else if (data.message === "invalid password") {
           showWarningAlert("Error", "Contraseña incorrecta");
         } else {
