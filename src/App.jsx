@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/landing/Home";
 import Registro from "./Pages/cuenta/Registro";
 import Login from "./Pages/cuenta/Login";
-import InicioBot from "./Pages/bot/InicioBot";
+import InicioBot from "./Components/bot/InicioBot";
 
 function App() {
   return (

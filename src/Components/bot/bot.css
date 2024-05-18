@@ -1,0 +1,20 @@
+.bot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bot-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.message {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+}

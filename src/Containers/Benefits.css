@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .benefits{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -90,4 +91,98 @@
     font-size: 1.2rem;
     color: white;
     text-align: center;
+=======
+.benefits{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 30px;
+}
+
+.titleb{
+    font-size: 4rem;
+    color: black;
+    text-align: left;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.primericon{
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangulo1{
+    width: 300px;         
+    height: 350px;        
+    background-color: #936CFB; 
+    position: relative;
+    border-radius: 15px;
+}
+
+.icono1{
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
+}
+
+.texto1{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.rectangulo2{
+    width: 300px;         
+    height: 350px;        
+    background-color: #936CFB; 
+    position: relative;
+    border-radius: 15px;
+}
+
+.icono2{
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
+}
+
+.texto2{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.rectangulo3{
+    width: 300px;         
+    height: 350px;        
+    background-color: #936CFB; 
+    position: relative;
+    border-radius: 15px;
+}
+
+.icono3{
+    height: 100px;
+    width: 100px;
+    position: absolute;    
+    top: 10%; 
+    left: 30%;             
+}
+
+.texto3{
+    padding-top: 60%;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+>>>>>>> 7b3f2bce2e5e2d200ddc9b61e40b605cface98ec
 }

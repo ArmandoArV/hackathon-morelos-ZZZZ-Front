@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .aboutus{
     display: flex;
     flex-direction: row;
@@ -26,4 +27,34 @@
       width: 40rem;
       height: 35rem;
       rotate: -15deg;
+=======
+.aboutus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 75px;
+  }
+
+  .title{
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .text{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .right-Container {
+    justify-content: right;
+    align-items: right;
+  }
+  
+  .clara{
+      width: 40rem;
+      height: 35rem;
+      rotate: -15deg;
+>>>>>>> 7b3f2bce2e5e2d200ddc9b61e40b605cface98ec
   }
