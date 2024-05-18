@@ -1,42 +1,20 @@
 .bot-container {
-  background-color: white;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
-.bot-header img {
-  height: 300px;
-  margin-top: 4rem;
+.bot-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
-.saludo h1 {
-  padding: 5rem 15rem 5rem 15rem;
-  color: black;
-}
-
-.start-btn {
-  height: 4rem;
-  width: 10rem;
-  border-radius: 10px;
-  border: 3px solid black;
-  font-size: 20px;
-  background-color: var(--amarillo);
-}
-
-.stars1 {
-  position: absolute;
-  top: 5%;
-  right: 20%;
-}
-.stars2 {
-  position: absolute;
-  top: 5%;
-  left: 20%;
-}
-
-.stars1 img,
-.stars2 img {
-  height: 35rem;
-  width: 35rem;
+.message {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
 }
