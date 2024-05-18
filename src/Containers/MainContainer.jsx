@@ -6,7 +6,7 @@ export default function MainContainer() {
     <>
       <div className="mainContainer">
         <div className="left-Container">
-          <p><span class="color">Aprender</span> de <span class="color"><br></br>finanzas</span> nunca fue <br></br>tan <span class="color">fácil</span> </p>
+          <p><span class="color">Aprender</span> sobre <span class="color"><br></br>finanzas</span> nunca fue <br></br>tan <span class="color">fácil</span> </p>
         </div>
       </div>
     </>

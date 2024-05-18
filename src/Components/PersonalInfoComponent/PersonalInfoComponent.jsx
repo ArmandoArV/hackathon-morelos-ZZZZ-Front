@@ -16,8 +16,10 @@ export default function PersonalInfoComponent(props) {
                 <div
                     className="mediumContainer"
                 >
-                    <input type="number"
-                    value={props.value}
+                    <input
+
+                        type="number"
+                        value={props.value}
                     >
 
                     </input>
@@ -26,7 +28,7 @@ export default function PersonalInfoComponent(props) {
                     className="bottomContainer"
                 >
                     <button
-                    onClick={props.onClick}
+                        onClick={props.onClick}
                     >
                         Siguiente
                     </button>
