@@ -7,7 +7,7 @@ import groupStars2 from '../../images/groupStars2.svg';
 import { questions } from './preguntas';
 import PersonalInfoComponent from '../../Components/PersonalInfoComponent/PersonalInfoComponent';
 
-const InicioBot = () => {
+const PersonalInfo = () => {
   const [isStarted, setIsStarted] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
@@ -57,4 +57,4 @@ const InicioBot = () => {
   );
 };
 
-export default InicioBot;
+export default PersonalInfo;

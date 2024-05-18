@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/landing/Home";
 import Registro from "./Pages/cuenta/Registro";
 import Login from "./Pages/cuenta/Login";
-import InicioBot from "./Components/bot/InicioBot";
+import PersonalInfo from "./Pages/bot/PersonalInfo";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/iniciar-sesion" element={<Login />} />
-            <Route path="/informacion-personal" element={<InicioBot />} />
+            <Route path="/informacion-personal" element={<PersonalInfo />} />
           </Routes>
         </Router>
       </>
