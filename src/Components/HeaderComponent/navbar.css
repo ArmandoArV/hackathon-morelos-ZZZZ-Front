@@ -12,6 +12,12 @@
   top: 0;
   left: 0;
   z-index: 1;
+  background:rgba(93,88,244,0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(93,88,244,0.05);
+}
+.logo-container img{
+    margin-right:9rem;
 }
 
 .navbarContainer .navbarList {
@@ -128,8 +134,8 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 10em;
-  width: 10em;
+  height: 9em;
+  width: 9em;
 }
 
 .logo-container img {
@@ -137,12 +143,32 @@
   height: 100%;
 }
 
+.navbarItem:hover{
+    color: var(--amarillo);
+}
+
 .elementButton {
   padding: 0.5em;
   margin: 1em;
   width: 10em;
   height: 3em;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 3px solid white;
+  background-color: transparent;
+}
+
+.elementButton p{
+    color:white;
+    font-size: 18px;
+}
+
+.elementButton:hover{
+    
+    background-color: var(--amarillo);
+}
+
+.elementButton p:hover{
+    color: var(--morado-rey);
 }
 
 .buttons-container-external {

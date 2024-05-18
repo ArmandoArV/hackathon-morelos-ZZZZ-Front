@@ -6,7 +6,7 @@ export default function Problem() {
     <>
       <div className="problem">
         <div className="titleP">
-          <p>Problemática </p>
+          <p>El rezago en la inclusión financiera en mujeres en México</p>
         </div>
         <div className="datos">
           <div className="primerdato">

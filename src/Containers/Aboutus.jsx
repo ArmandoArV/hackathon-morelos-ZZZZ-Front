@@ -10,20 +10,24 @@ export default function Aboutus() {
           <div className="title">
             <p>Conoce a Freya </p>
           </div>
-          <div className="text">
+          <div className="paragraph1">
             <p>
-              Freya es tu nueva asesora en situaciones financieras, te ayudara a
+              Freya es tu nueva asesora en situaciones financieras, te ayudará a
               conocer mejor tus ingresos, egresos y deudas hasta te puede ayudar
               dando mensajes para que aprendas a manejar mejor tu dinero.
-              <br></br>Nuestro enfoque va a mujeres jóvenes en México para que
-              puedan sacar provecho de sus ingresos y puedan aprender a llevar
-              una vida economicamente más estable.
+            </p>
+          </div>
+          <div className="paragraph2">
+            <p>
+              Nuestro enfoque es empoderar a mujeres jóvenes en México a través de la educación financiera 
+              para que puedan sacar provecho de sus ingresos y puedan aprender a llevar
+              una vida económicamente más estable.
             </p>
           </div>
         </div>
         <div className="right-Container">
           <div className="imageContainer">
-            <img className="clara" src={clara} alt="" />
+            <img src={clara} alt="" />
           </div>
         </div>
       </div>

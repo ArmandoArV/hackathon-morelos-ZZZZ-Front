@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import Logo from "../images/logoImagen.svg";
+import Logo from "../images/logo_short.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footercont">
           <div className="logo-footer-container">
             <div className="footerlogo">
-              <Link to="/">
+              <Link to="#">
                 <img src={Logo}></img>
               </Link>
             </div>

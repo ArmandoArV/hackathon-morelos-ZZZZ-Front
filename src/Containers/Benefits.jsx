@@ -24,7 +24,7 @@ export default function Benefits() {
     <>
       <div className="benefits">
         <div className="titleb">
-          <p>Beneficios</p>
+          <p>Goza de los siguientes beneficios</p>
         </div>
         <div className="iconContainer">
           {arrayOfInfo.map((info, index) => (

@@ -98,9 +98,9 @@ const Login = () => {
           <label className="contra">Olvide mi contraseña</label>
         </div>
 
-        <div>
-          <button type="submit" className="btn-submit-login">
-            <p color="#5B57F4">Iniciar sesión</p>
+        <div className="btn-submitt-login">
+          <button type="submit" >
+            <p>Iniciar sesión</p>
           </button>
         </div>
       </form>

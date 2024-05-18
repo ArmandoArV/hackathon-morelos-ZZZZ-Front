@@ -2,12 +2,14 @@
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 30px;
+
 }
 
 .titleb {
   font-size: 4rem;
   color: black;
-  text-align: left;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 .iconContainer {

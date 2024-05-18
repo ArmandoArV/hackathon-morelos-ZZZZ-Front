@@ -1,7 +1,7 @@
 import { navBarElements } from "../../constants";
 import React from "react";
 import "./navbar.css";
-import Logo from "../../images/logo_completo.svg";
+import Logo from "../../images/logo_short.svg";
 import { Link } from "react-router-dom";
 
 export default function NavbarLanding() {

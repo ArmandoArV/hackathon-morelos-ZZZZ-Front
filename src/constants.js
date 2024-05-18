@@ -9,7 +9,7 @@ export const navBarElements = [
   },
   {
     id: "#problem",
-    name: "Problemática",
+    name: "Impacto",
   },
   {
     id: "#benefits",

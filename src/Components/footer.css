@@ -23,13 +23,14 @@
 
 .footerlogo img {
   height: 7rem;
-  width: 9rem;
+  width: 10rem;
   object-fit: contain;
 }
 
 .footertext {
   font-size: 1.2rem;
-  margin-right: 10px;
+  margin-left: 2rem;
+  margin-right: 1rem;
   font-weight: 400;
 }
 
@@ -52,7 +53,7 @@
 
   .footerlogo img {
     height: 7rem;
-    width: 9rem;
+    width: 5rem;
     object-fit: contain;
   }
 
