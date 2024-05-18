@@ -1,117 +1,138 @@
-.dashboard{
-    padding: 4rem;
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.widgets{
-    display: flex;
-    flex-direction: column;
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
 }
 
-.arriba{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    text-align: center;
-    align-items: center;
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  margin-top: 5em;
 }
 
-.deuda{
-    align-items: center;
-}
-.rectangulod {
-    width: 450px;
-    height: 250px;
-    background-color: #FEE492;
-    border-radius: 25px; 
-    position: relative;
-}
-
-.deudasw{
-    font-size: 1.2rem;
-    color: black;
-    text-align: left;
-    padding: 2rem;
-
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  height: 15em;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  margin: 0.5em;
+  padding: 3em;
 }
 
-.montod{
-    font-size:3rem;
-    color: #5B57F4;
-    text-align: center;
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.ingresos{
-    align-items: center;
-}
-.rectanguloi {
-    width: 250px;
-    height: 250px;
-    background-color: #FEE492;
-    border-radius: 25px; 
-    position: relative;
+.titleContainer p {
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
-.ingresosw{
-    font-size: 1.2rem;
-    color: black;
-    text-align: left;
-    padding: 2rem;
-
+.valueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.montoi{
-    font-size:3rem;
-    color: #5B57F4;
-    text-align: center;
+.valueText {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #5b57f4;
 }
 
-.egresos{
-    align-items: center;
-}
-.rectanguloe {
-    width: 250px;
-    height: 250px;
-    background-color: #FEE492;
-    border-radius: 25px; 
-    position: relative;
-}
-
-.egresosw{
-    font-size: 1.2rem;
-    color: black;
-    text-align: left;
-    padding: 2rem;
-
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  margin: 0.5em;
+  padding: 3em;
 }
 
-.montoe{
-    font-size:3rem;
-    color: #5B57F4;
-    text-align: center;
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 15em;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  margin: 0.5em;
+  padding: 3em;
 }
 
-.abajo{
-    display: flex;
-    text-align: left;
-    align-items: left;
-    padding-top: 50px;
+.bottomLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  margin: 0.5em;
+  padding: 3em;
 }
 
-.grafica{
-    align-items: center;
-}
-.rectangulog {
-    width: 450px;
-    height: 400px;
-    background-color: #FEE492;
-    border-radius: 25px; 
-    position: relative;
-}
-
-.finanzas{
-    font-size: 1.2rem;
-    color: black;
-    text-align: left;
-    padding: 2rem;
-
+.bottomRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    140deg,
+    #ffefbc 3.63%,
+    #fee492 49.54%,
+    #fee492 96.37%
+  );
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  margin: 0.5em;
+  padding: 3em;
 }

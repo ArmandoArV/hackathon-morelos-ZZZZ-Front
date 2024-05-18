@@ -1,68 +1,191 @@
-import React from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "./Dashboard.css";
-import clara from "../images/clara.png"
-import LateralNavbar from "../Components/LateralNavbar";
+import { API_URL } from "../constants";
+import clara from "../images/clara.png";
+import DoubleChartComponent from "../Components/DoubleChartComponent/DoubleChartComponent";
 
 export default function Dashboard() {
+  const [debt, setDebt] = useState(0);
+  const [income, setIncome] = useState(0);
+  const [outcome, setOutcome] = useState(0);
+  const [chartData, setChartData] = useState([]);
+  const [secondChartData, setSecondChartData] = useState([]);
+  const [chartLabels, setChartLabels] = useState([]);
+  const fetchDebt = useCallback(async () => {
+    try {
+      const response = await fetch(
+        `${API_URL}/averageDebt/${localStorage.getItem("userId")}`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
+      const data = await response.json();
+      // Format debt to have two decimals and add comma if higher than 1000
+      const formattedDebt = parseFloat(data.averageDebt).toLocaleString(
+        "en-US",
+        {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }
+      );
+      setDebt(formattedDebt);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  const fetchIncomeOutcome = useCallback(async () => {
+    try {
+      const response = await fetch(
+        `${API_URL}/personal-info/average/${localStorage.getItem("userId")}`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
+      const data = await response.json();
+      setIncome(data.averageIncome);
+      setOutcome(data.averageOutcome);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  const fetchgetMonthlyPersonalInfo = useCallback(async () => {
+    try {
+      const response = await fetch(
+        `${API_URL}/personal-info/monthly/${localStorage.getItem("userId")}`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
+      const data = await response.json();
+      const labels = data.map((item) => item.startMonth);
+      const values = data.map((item) => item.income);
+      const values2 = data.map((item) => item.outcome);
+      setChartLabels(labels);
+      setChartData(values);
+      setSecondChartData(values2);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchDebt();
+    fetchIncomeOutcome();
+    fetchgetMonthlyPersonalInfo();
+  }, [fetchDebt, fetchIncomeOutcome, fetchgetMonthlyPersonalInfo]);
+
+  console.log("labels", chartLabels);
+  console.log("values", chartData);
+  console.log("values2", secondChartData);
+
   return (
     <>
-        <div className="dashboard">
-            <div className="widgets">
-                <div className="arriba">
-
-                    <div className="deuda">
-                        <div className="rectangulod">
-                            <div className="deudasw">
-                                <p>Deuda</p>
-                            </div>
-                            <div className="montod">
-                                <p><b>$500</b></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="ingresos">
-                        <div className="rectanguloi">
-                            <div className="ingresosw">
-                                <p>Ingresos</p>
-                            </div>
-                            <div className="montoi">
-                                <p><b>$2000</b></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="egresos">
-                        <div className="rectanguloe">
-                            <div className="egresosw">
-                                <p>Egresos</p>
-                            </div>
-                            <div className="montoe">
-                                <p><b>$5489</b></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-                <div className="abajo">
-                    <div className="grafica">
-                        <div className="rectangulog">
-                            <div className="finanzas">
-                                <p>Análisis Financiero</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="robot">
-                        <img className="clara" src={clara}></img>
-                    </div>
-                </div>
-                <div>
-                    <LateralNavbar />
-                </div>
+      <div className="dashboard">
+        <div className="topContainer">
+          <div className="leftContainer">
+            <div className="titleContainer">
+              <p>Deuda</p>
             </div>
+            <div className="valueContainer">
+              <p className="valueText">
+                $
+                {debt.toLocaleString("en-US", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+              </p>
+            </div>
+          </div>
+          <div className="centerContainer">
+            <div className="titleContainer">
+              <p>Ingresos</p>
+            </div>
+            <div className="valueContainer">
+              <p className="valueText">
+                $
+                {income.toLocaleString("en-US", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+              </p>
+            </div>
+          </div>
+          <div className="rightContainer">
+            <div className="titleContainer">
+              <p>Egresos</p>
+            </div>
+            <div className="valueContainer">
+              <p className="valueText">
+                $
+                {outcome.toLocaleString("en-US", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+              </p>
+            </div>
+          </div>
         </div>
+        <div className="bottomContainer">
+          <div className="bottomLeftContainer">
+            <div className="titleContainer">
+              <p>Ingresos y Egresos Mensuales</p>
+            </div>
+            <DoubleChartComponent
+              datasets={[
+                {
+                  data: chartData,
+                  label: "Income",
+                  borderColor: "#F457D1",
+                  backgroundColor: "#F457D1",
+                },
+                {
+                  data: secondChartData,
+                  label: "Outcome",
+                  borderColor: "#5B57F4",
+                  backgroundColor: "#5B57F4",
+                },
+              ]}
+              labels={chartLabels}
+              chartType="bar" // You can change the chart type as needed
+              graphTitle="Ingreso Mensual vs Egreso Mensual"
+              cName="monthly-chart" // Optional custom class name for styling
+            />
+          </div>
+          <div className="bottomRightContainer"></div>
+        </div>
+      </div>
     </>
   );
 }
 
+/*
+
+                      $
+                      {income.toLocaleString("en-US", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}
+
+                      $
+                      {outcome.toLocaleString("en-US", {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })}
+
+                    <ChartComponent
+                      data={chartData}
+                      labels={chartLabels}
+                      graphTitle="Sample Chart"
+                      isFilled={true}
+                      chartType="line"
+                    />
+
+*/
